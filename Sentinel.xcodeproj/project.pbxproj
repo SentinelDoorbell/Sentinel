@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5D810AD144AAE6A0041D58A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D810AC144AAE6A0041D58A /* UIKit.framework */; };
+		A5D810AF144AAE6A0041D58A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D810AE144AAE6A0041D58A /* Foundation.framework */; };
+		A5D810B1144AAE6A0041D58A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D810B0144AAE6A0041D58A /* CoreGraphics.framework */; };
+		A5D810B7144AAE6A0041D58A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5D810B5144AAE6A0041D58A /* InfoPlist.strings */; };
+		A5D810BA144AAE6B0041D58A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D810B9144AAE6B0041D58A /* main.m */; };
+		A5D810BD144AAE6B0041D58A /* SentinelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */; };
+		A5D810C1144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */; };
+		A5D810C4144AAE6B0041D58A /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D810C2144AAE6B0041D58A /* MainWindow_iPhone.xib */; };
+		A5D810C8144AAE6B0041D58A /* SentinelAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */; };
+		A5D810CB144AAE6B0041D58A /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D810C9144AAE6B0041D58A /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5D810A8144AAE6A0041D58A /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D810AC144AAE6A0041D58A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5D810AE144AAE6A0041D58A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5D810B0144AAE6A0041D58A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5D810B4144AAE6A0041D58A /* Sentinel-Info.plist */ = {isa = PBXFileReference; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
+		A5D810B6144AAE6A0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5D810B8144AAE6A0041D58A /* Sentinel-Prefix.pch */ = {isa = PBXFileReference; path = "Sentinel-Prefix.pch"; sourceTree = "<group>"; };
+		A5D810B9144AAE6B0041D58A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */ = {isa = PBXFileReference; path = SentinelAppDelegate.h; sourceTree = "<group>"; };
+		A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentinelAppDelegate.m; sourceTree = "<group>"; };
+		A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = SentinelAppDelegate_iPhone.h; path = iPhone/SentinelAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SentinelAppDelegate_iPhone.m; path = iPhone/SentinelAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		A5D810C3144AAE6B0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		A5D810C6144AAE6B0041D58A /* SentinelAppDelegate_iPad.h */ = {isa = PBXFileReference; name = SentinelAppDelegate_iPad.h; path = iPad/SentinelAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SentinelAppDelegate_iPad.m; path = iPad/SentinelAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A5D810CA144AAE6B0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5D810A5144AAE6A0041D58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D810AD144AAE6A0041D58A /* UIKit.framework in Frameworks */,
+				A5D810AF144AAE6A0041D58A /* Foundation.framework in Frameworks */,
+				A5D810B1144AAE6A0041D58A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5D8109D144AAE6A0041D58A = {
+			isa = PBXGroup;
+			children = (
+				A5D810B2144AAE6A0041D58A /* Sentinel */,
+				A5D810AB144AAE6A0041D58A /* Frameworks */,
+				A5D810A9144AAE6A0041D58A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5D810A9144AAE6A0041D58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810A8144AAE6A0041D58A /* Sentinel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5D810AB144AAE6A0041D58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810AC144AAE6A0041D58A /* UIKit.framework */,
+				A5D810AE144AAE6A0041D58A /* Foundation.framework */,
+				A5D810B0144AAE6A0041D58A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5D810B2144AAE6A0041D58A /* Sentinel */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */,
+				A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */,
+				A5D810BE144AAE6B0041D58A /* iPhone */,
+				A5D810C5144AAE6B0041D58A /* iPad */,
+				A5D810B3144AAE6A0041D58A /* Supporting Files */,
+			);
+			path = Sentinel;
+			sourceTree = "<group>";
+		};
+		A5D810B3144AAE6A0041D58A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810B4144AAE6A0041D58A /* Sentinel-Info.plist */,
+				A5D810B5144AAE6A0041D58A /* InfoPlist.strings */,
+				A5D810B8144AAE6A0041D58A /* Sentinel-Prefix.pch */,
+				A5D810B9144AAE6B0041D58A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5D810BE144AAE6B0041D58A /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */,
+				A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */,
+				A5D810C2144AAE6B0041D58A /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		A5D810C5144AAE6B0041D58A /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A5D810C6144AAE6B0041D58A /* SentinelAppDelegate_iPad.h */,
+				A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */,
+				A5D810C9144AAE6B0041D58A /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5D810A7144AAE6A0041D58A /* Sentinel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D810CE144AAE6B0041D58A /* Build configuration list for PBXNativeTarget "Sentinel" */;
+			buildPhases = (
+				A5D810A4144AAE6A0041D58A /* Sources */,
+				A5D810A5144AAE6A0041D58A /* Frameworks */,
+				A5D810A6144AAE6A0041D58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sentinel;
+			productName = Sentinel;
+			productReference = A5D810A8144AAE6A0041D58A /* Sentinel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5D8109F144AAE6A0041D58A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Self;
+			};
+			buildConfigurationList = A5D810A2144AAE6A0041D58A /* Build configuration list for PBXProject "Sentinel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5D8109D144AAE6A0041D58A;
+			productRefGroup = A5D810A9144AAE6A0041D58A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5D810A7144AAE6A0041D58A /* Sentinel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5D810A6144AAE6A0041D58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D810B7144AAE6A0041D58A /* InfoPlist.strings in Resources */,
+				A5D810C4144AAE6B0041D58A /* MainWindow_iPhone.xib in Resources */,
+				A5D810CB144AAE6B0041D58A /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5D810A4144AAE6A0041D58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D810BA144AAE6B0041D58A /* main.m in Sources */,
+				A5D810BD144AAE6B0041D58A /* SentinelAppDelegate.m in Sources */,
+				A5D810C1144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m in Sources */,
+				A5D810C8144AAE6B0041D58A /* SentinelAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5D810B5144AAE6A0041D58A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D810B6144AAE6A0041D58A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5D810C2144AAE6B0041D58A /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D810C3144AAE6B0041D58A /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A5D810C9144AAE6B0041D58A /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D810CA144AAE6B0041D58A /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5D810CC144AAE6B0041D58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5D810CD144AAE6B0041D58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5D810CF144AAE6B0041D58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
+				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5D810D0144AAE6B0041D58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sentinel/Sentinel-Prefix.pch";
+				INFOPLIST_FILE = "Sentinel/Sentinel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5D810A2144AAE6A0041D58A /* Build configuration list for PBXProject "Sentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D810CC144AAE6B0041D58A /* Debug */,
+				A5D810CD144AAE6B0041D58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D810CE144AAE6B0041D58A /* Build configuration list for PBXNativeTarget "Sentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D810CF144AAE6B0041D58A /* Debug */,
+				A5D810D0144AAE6B0041D58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5D8109F144AAE6A0041D58A /* Project object */;
+}
