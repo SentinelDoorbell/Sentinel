@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SentinelAppDelegate : NSObject <UIApplicationDelegate> {
-
+    UIWebView *view;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

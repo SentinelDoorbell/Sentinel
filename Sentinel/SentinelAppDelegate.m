@@ -15,7 +15,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    CGRect webFrame = [[UIScreen mainScreen] applicationFrame];
+    view = [[UIWebView alloc] initWithFrame:webFrame];
+    [self.window addSubview:view];
+    
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080"];
+    
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+
+    [view loadRequest:requestObj];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +71,7 @@
 
 - (void)dealloc
 {
+    [view release];
     [_window release];
     [super dealloc];
 }
