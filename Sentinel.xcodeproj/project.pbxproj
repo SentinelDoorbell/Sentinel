@@ -24,16 +24,16 @@
 		A5D810AC144AAE6A0041D58A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5D810AE144AAE6A0041D58A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5D810B0144AAE6A0041D58A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5D810B4144AAE6A0041D58A /* Sentinel-Info.plist */ = {isa = PBXFileReference; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
+		A5D810B4144AAE6A0041D58A /* Sentinel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sentinel-Info.plist"; sourceTree = "<group>"; };
 		A5D810B6144AAE6A0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5D810B8144AAE6A0041D58A /* Sentinel-Prefix.pch */ = {isa = PBXFileReference; path = "Sentinel-Prefix.pch"; sourceTree = "<group>"; };
+		A5D810B8144AAE6A0041D58A /* Sentinel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sentinel-Prefix.pch"; sourceTree = "<group>"; };
 		A5D810B9144AAE6B0041D58A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */ = {isa = PBXFileReference; path = SentinelAppDelegate.h; sourceTree = "<group>"; };
+		A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentinelAppDelegate.h; sourceTree = "<group>"; };
 		A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentinelAppDelegate.m; sourceTree = "<group>"; };
-		A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = SentinelAppDelegate_iPhone.h; path = iPhone/SentinelAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SentinelAppDelegate_iPhone.h; path = iPhone/SentinelAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SentinelAppDelegate_iPhone.m; path = iPhone/SentinelAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		A5D810C3144AAE6B0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		A5D810C6144AAE6B0041D58A /* SentinelAppDelegate_iPad.h */ = {isa = PBXFileReference; name = SentinelAppDelegate_iPad.h; path = iPad/SentinelAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A5D810C6144AAE6B0041D58A /* SentinelAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SentinelAppDelegate_iPad.h; path = iPad/SentinelAppDelegate_iPad.h; sourceTree = "<group>"; };
 		A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SentinelAppDelegate_iPad.m; path = iPad/SentinelAppDelegate_iPad.m; sourceTree = "<group>"; };
 		A5D810CA144AAE6B0041D58A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +303,7 @@
 				A5D810D0144AAE6B0041D58A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,195 @@
+// !$*UTF8*$!
+{
+	67F11FE714659567008ABB88 /* Sentinel */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Sentinel;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	67F1200114659585008ABB88 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	67F1200214659585008ABB88 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	67F120CF1465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */;
+		name = "SentinelAppDelegate_iPhone.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 0;
+	};
+	67F120D01465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */;
+		name = "SentinelAppDelegate_iPad.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 0;
+	};
+	67F120D11465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */;
+		name = "SentinelAppDelegate_iPhone.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 271;
+		vrLoc = 0;
+	};
+	67F120D21465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */;
+		name = "SentinelAppDelegate.h: 50";
+		rLen = 0;
+		rLoc = 887;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 0;
+	};
+	67F120D31465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 190";
+		rLen = 0;
+		rLoc = 5858;
+		rType = 0;
+		vrLen = 1546;
+		vrLoc = 3855;
+	};
+	67F120D41465DD26008ABB88 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 200";
+		rLen = 0;
+		rLoc = 5814;
+		rType = 0;
+		vrLen = 1603;
+		vrLoc = 4529;
+	};
+	A5D8109F144AAE6A0041D58A /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 67F11FE714659567008ABB88 /* Sentinel */;
+		activeTarget = A5D810A7144AAE6A0041D58A /* Sentinel */;
+		codeSenseManager = 67F1200214659585008ABB88 /* Code sense */;
+		executables = (
+			67F11FE714659567008ABB88 /* Sentinel */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1127,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 342220078;
+			PBXWorkspaceStateSaveDate = 342220078;
+		};
+		perUserProjectItems = {
+			67F120CF1465DD26008ABB88 = 67F120CF1465DD26008ABB88 /* PBXTextBookmark */;
+			67F120D01465DD26008ABB88 = 67F120D01465DD26008ABB88 /* PBXTextBookmark */;
+			67F120D11465DD26008ABB88 = 67F120D11465DD26008ABB88 /* PBXTextBookmark */;
+			67F120D21465DD26008ABB88 = 67F120D21465DD26008ABB88 /* PBXTextBookmark */;
+			67F120D31465DD26008ABB88 = 67F120D31465DD26008ABB88 /* PBXTextBookmark */;
+			67F120D41465DD26008ABB88 = 67F120D41465DD26008ABB88 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 67F1200114659585008ABB88 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A5D810A7144AAE6A0041D58A /* Sentinel */ = {
+		activeExec = 0;
+		executables = (
+			67F11FE714659567008ABB88 /* Sentinel */,
+		);
+	};
+	A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1305, 1083}}";
+			sepNavSelRange = "{887, 0}";
+			sepNavVisRange = "{0, 915}";
+		};
+	};
+	A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1305, 2821}}";
+			sepNavSelRange = "{5814, 0}";
+			sepNavVisRange = "{4529, 1603}";
+			sepNavWindowFrame = "{{225, 155}, {827, 833}}";
+		};
+	};
+	A5D810BF144AAE6B0041D58A /* SentinelAppDelegate_iPhone.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {915, 934}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 275}";
+		};
+	};
+	A5D810C0144AAE6B0041D58A /* SentinelAppDelegate_iPhone.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {915, 934}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 271}";
+		};
+	};
+	A5D810C7144AAE6B0041D58A /* SentinelAppDelegate_iPad.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {915, 934}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 265}";
+		};
+	};
+}

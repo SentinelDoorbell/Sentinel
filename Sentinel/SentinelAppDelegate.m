@@ -12,68 +12,226 @@
 
 
 @synthesize window=_window;
+@synthesize theWebView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	
+	theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://128.238.151.253/"] 	  
+								cachePolicy:NSURLRequestUseProtocolCachePolicy						  
+							timeoutInterval:60.0];
+	
+	theWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0,64,320,240)];
+	theWebView.userInteractionEnabled = YES;
+	
+	SentinelTouchView* tmpView = [[SentinelTouchView alloc] initWithFrame:CGRectMake(0,0,320,240)];
+	[theWebView addSubview:tmpView];
+	
+	theConnection=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
 
-    CGRect webFrame = [[UIScreen mainScreen] applicationFrame];
-    view = [[UIWebView alloc] initWithFrame:webFrame];
-    [self.window addSubview:view];
-    
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8080"];
-    
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-
-    [view loadRequest:requestObj];
-    
-    [self.window makeKeyAndVisible];
-    return YES;
+	[self.window addSubview:theWebView];
+	[self.window makeKeyAndVisible];
+	return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge 
 {
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
+	if ([challenge previousFailureCount] == 0)
+	{
+		NSURLCredential *newCredential;
+		newCredential=[NSURLCredential credentialWithUser:@"kongcao7bl"
+												 password:@"Kongcao7BL"
+											  persistence:NSURLCredentialPersistenceForSession];
+		[[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
+		NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphMotionJpeg?Resolution=320x240&Quality=Standard"];
+		NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+		[theWebView loadRequest:requestObj];
+		
+		NSLog(@"Hello world");
+	}
+	else
+	{
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentication Failure" 
+														message:@"Invalid username/password."
+													   delegate:nil
+											  cancelButtonTitle:@"OK" 
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (IBAction) onTiltScanClick: (id) sender
 {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-     */
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=TiltScan&PanTiltMin=1"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+
+	NSLog(@"TiltScan");
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (IBAction) onPanScanClick: (id) sender
 {
-    /*
-     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-     */
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=PanScan&PanTiltMin=1"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"PanScan");
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+- (IBAction) onBrightnessDarker:(id) sender
 {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=Darker"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
+- (IBAction) onBrightnessReset:(id) sender
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=DefaultBrightness"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+}
+
+- (IBAction) onBrightnessBrighter:(id) sender
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=Brighter"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+}
+
+
+- (IBAction) OnNightModeSwitch: (id) sender
+{
+	UISwitch *nightSwitch = (UISwitch *) sender;
+	
+
+	
+	if ([nightSwitch isOn] )
+	{
+		NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=BacklightOn"];
+		NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+		[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	}
+	else 
+	{
+		NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=BacklightOff"];
+		NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+		[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	}
+
+	NSLog(@"NightMode");
+}
+
+- (IBAction) OnAlarmClick: (id) sender
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=Sound"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	
+	NSLog(@"Alarm");
+}
+
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error 
+{
+    [connection release];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
 }
 
 - (void)dealloc
 {
-    [view release];
+    [theWebView release];
     [_window release];
     [super dealloc];
+}
+
+@end
+
+@implementation SentinelTouchView
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
+{
+	CGPoint startLocation = [(UITouch*)[touches anyObject] locationInView:self];
+
+	double x = startLocation.x;
+	double y = startLocation.y;
+
+	NSLog(@"%f %f", x, y);
+	
+	if(x >= 100 && x <= 210 && y >= 80 && y <= 160)
+	{
+		[self homePosition];
+	}
+	
+	if (y >= 0 && y <= 80)
+	{
+		[self tiltUp];
+	}
+	else if(y >= 160 && y <= 240)
+	{
+		[self tiltDown];
+	}
+	
+	if (x >= 0 & x <= 110)
+	{
+		[self PanLeft];
+	}
+	else if(x >= 210 && x <= 320)
+	{
+		[self PanRight];
+	}
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
+{
+	CGPoint startLocation = [(UITouch*)[touches anyObject] locationInView:self];
+	
+	double x = startLocation.x;
+	double y = startLocation.y;
+	
+	NSLog(@"Ended: %f %f", x, y);
+}
+
+- (void) homePosition
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=HomePosition"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"TiltUp");
+}
+
+- (void) tiltUp
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=TiltUp"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"TiltUp");
+}
+
+- (void) tiltDown
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=TiltDown"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"TiltDown");
+}
+
+- (void) PanLeft
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=PanLeft"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"Pan Left");
+}
+
+- (void) PanRight
+{
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/nphControlCamera?Direction=PanRight"];
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+	[NSURLConnection sendSynchronousRequest:requestObj returningResponse:nil error:nil];
+	NSLog(@"Pan Right");
 }
 
 @end
