@@ -1,5 +1,0 @@
-/Users/researcher/Sentinel/Sentinel/SentinelAppDelegate.m: In function '-[SentinelTouchView touchesBegan:withEvent:]':
-/Users/researcher/Sentinel/Sentinel/SentinelAppDelegate.m:165: warning: 'SentinelTouchView' may not respond to '-homePosition'
-/Users/researcher/Sentinel/Sentinel/SentinelAppDelegate.m:165: warning: (Messages without a matching method signature
-/Users/researcher/Sentinel/Sentinel/SentinelAppDelegate.m:165: warning: will be assumed to return 'id' and accept
-/Users/researcher/Sentinel/Sentinel/SentinelAppDelegate.m:165: warning: '...' as arguments.)

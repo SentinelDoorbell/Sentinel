@@ -13,6 +13,7 @@
 
 @synthesize window=_window;
 @synthesize theWebView;
+@synthesize theImageView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -131,6 +132,48 @@
 	NSLog(@"Alarm");
 }
 
+- (IBAction) OnSnapshot: (id) sender
+{
+	NSDateFormatter *format = [[NSDateFormatter alloc] init];
+	[format setDateFormat:@"yyyyMMMdd_HH_mm_ss"];
+	
+	NSDate *now = [NSDate date];
+	
+	NSString *dateString = [format stringFromDate:now];
+	
+	NSURL *url = [NSURL URLWithString:@"http://128.238.151.253/SnapshotJPEG?Resolution=320x240&Quality=Motion&Count=0"];
+	NSData *data = [NSData dataWithContentsOfURL:url];
+	NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *str = [[NSString alloc] initWithFormat:@"/%@.jpg", dateString];
+	path = [path stringByAppendingString:str];
+	[str release];
+
+	[data writeToFile:path atomically:YES];
+}
+
+- (IBAction) OnImagesClick: (id) sender
+{
+	NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:nil];
+	NSArray *onlyJPGs = [dirContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.jpg'"]];
+	
+	for(NSString* image in onlyJPGs)
+	{
+		NSString* fullPath = [[NSString alloc] initWithFormat:@"%@/%@",path, image];
+		
+		UIImage *image = [UIImage imageWithContentsOfFile:fullPath];
+		
+		if (image)
+		{
+			NSLog(@"Image is good");
+		}
+		
+		[theImageView setImage:image];
+		
+		[fullPath release];
+	}
+}
+
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error 
 {
@@ -139,7 +182,9 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
+	
 }
+
 
 - (void)dealloc
 {

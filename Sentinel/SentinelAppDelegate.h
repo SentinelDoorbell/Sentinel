@@ -15,10 +15,13 @@
 
 	NSURLRequest *theRequest;
 	NSURLConnection *theConnection;
+	UIImageView	*theImageView;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UIWebView *theWebView;
+@property (nonatomic, retain) IBOutlet UIImageView *theImageView;
+
 
 
 - (IBAction) onTiltScanClick: (id) sender;
@@ -35,6 +38,9 @@
 
 - (IBAction) OnAlarmClick: (id) sender;
 
+- (IBAction) OnSnapshot: (id) sender;
+
+- (IBAction) OnImagesClick: (id) sender;
 @end
 
 

@@ -1,5 +1,55 @@
 // !$*UTF8*$!
 {
+	6754C5011465FA8800D27A80 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */;
+		name = "SentinelAppDelegate.h: 23";
+		rLen = 0;
+		rLoc = 559;
+		rType = 0;
+		vrLen = 1114;
+		vrLoc = 0;
+	};
+	6754C5021465FA8800D27A80 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 16";
+		rLen = 0;
+		rLoc = 283;
+		rType = 0;
+		vrLen = 2714;
+		vrLoc = 0;
+	};
+	6754C5031465FA8800D27A80 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 177";
+		rLen = 0;
+		rLoc = 5933;
+		rType = 0;
+		vrLen = 2130;
+		vrLoc = 4555;
+	};
+	67EFEB121465FA9D00DEC2A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 177";
+		rLen = 0;
+		rLoc = 5933;
+		rType = 0;
+		vrLen = 2105;
+		vrLoc = 4556;
+	};
+	67EFEB201465FACC00DEC2A7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
+		name = "SentinelAppDelegate.m: 173";
+		rLen = 0;
+		rLoc = 5933;
+		rType = 0;
+		vrLen = 2092;
+		vrLoc = 4556;
+	};
 	67F11FE714659567008ABB88 /* Sentinel */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -7,7 +57,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -74,36 +124,6 @@
 		vrLen = 271;
 		vrLoc = 0;
 	};
-	67F120D21465DD26008ABB88 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */;
-		name = "SentinelAppDelegate.h: 50";
-		rLen = 0;
-		rLoc = 887;
-		rType = 0;
-		vrLen = 915;
-		vrLoc = 0;
-	};
-	67F120D31465DD26008ABB88 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
-		name = "SentinelAppDelegate.m: 190";
-		rLen = 0;
-		rLoc = 5858;
-		rType = 0;
-		vrLen = 1546;
-		vrLoc = 3855;
-	};
-	67F120D41465DD26008ABB88 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */;
-		name = "SentinelAppDelegate.m: 200";
-		rLen = 0;
-		rLoc = 5814;
-		rType = 0;
-		vrLen = 1603;
-		vrLoc = 4529;
-	};
 	A5D8109F144AAE6A0041D58A /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 67F11FE714659567008ABB88 /* Sentinel */;
@@ -120,7 +140,7 @@
 					20,
 					1127,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -135,16 +155,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 342220078;
-			PBXWorkspaceStateSaveDate = 342220078;
+			PBXPerProjectTemplateStateSaveDate = 342227600;
+			PBXWorkspaceStateSaveDate = 342227600;
 		};
 		perUserProjectItems = {
+			6754C5011465FA8800D27A80 = 6754C5011465FA8800D27A80 /* PBXTextBookmark */;
+			6754C5021465FA8800D27A80 = 6754C5021465FA8800D27A80 /* PBXTextBookmark */;
+			6754C5031465FA8800D27A80 = 6754C5031465FA8800D27A80 /* PBXTextBookmark */;
+			67EFEB121465FA9D00DEC2A7 /* PBXTextBookmark */ = 67EFEB121465FA9D00DEC2A7 /* PBXTextBookmark */;
+			67EFEB201465FACC00DEC2A7 /* PBXTextBookmark */ = 67EFEB201465FACC00DEC2A7 /* PBXTextBookmark */;
 			67F120CF1465DD26008ABB88 = 67F120CF1465DD26008ABB88 /* PBXTextBookmark */;
 			67F120D01465DD26008ABB88 = 67F120D01465DD26008ABB88 /* PBXTextBookmark */;
 			67F120D11465DD26008ABB88 = 67F120D11465DD26008ABB88 /* PBXTextBookmark */;
-			67F120D21465DD26008ABB88 = 67F120D21465DD26008ABB88 /* PBXTextBookmark */;
-			67F120D31465DD26008ABB88 = 67F120D31465DD26008ABB88 /* PBXTextBookmark */;
-			67F120D41465DD26008ABB88 = 67F120D41465DD26008ABB88 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 67F1200114659585008ABB88 /* Source Control */;
 		userBuildSettings = {
@@ -158,16 +180,16 @@
 	};
 	A5D810BB144AAE6B0041D58A /* SentinelAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1305, 1083}}";
-			sepNavSelRange = "{887, 0}";
-			sepNavVisRange = "{0, 915}";
+			sepNavIntBoundsRect = "{{0, 0}, {1305, 1058}}";
+			sepNavSelRange = "{559, 0}";
+			sepNavVisRange = "{0, 1114}";
 		};
 	};
 	A5D810BC144AAE6B0041D58A /* SentinelAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1305, 2821}}";
-			sepNavSelRange = "{5814, 0}";
-			sepNavVisRange = "{4529, 1603}";
+			sepNavIntBoundsRect = "{{0, 0}, {1305, 3653}}";
+			sepNavSelRange = "{5933, 0}";
+			sepNavVisRange = "{4556, 2092}";
 			sepNavWindowFrame = "{{225, 155}, {827, 833}}";
 		};
 	};
